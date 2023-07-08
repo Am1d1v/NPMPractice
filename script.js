@@ -22,3 +22,8 @@ const stateDeepCopy = cloneDeep(state);
 state.user.loggedIn = false;
 console.log(state);
 console.log(stateDeepCopy);
+
+Promise.resolve('Testing').then(a => console.log('Finish'));
+
+import 'core-js/stable'
+import 'regenerator-runtime/runtime'
