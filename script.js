@@ -15,3 +15,10 @@ const state = {
 
 const stateCopy = Object.assign({}, state);
 console.log(stateCopy);
+
+const stateDeepCopy = cloneDeep(state);
+
+
+state.user.loggedIn = false;
+console.log(state);
+console.log(stateDeepCopy);
